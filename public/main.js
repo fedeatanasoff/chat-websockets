@@ -1,4 +1,4 @@
-const socket = io.connect("http://localhost:8000", { forceNew: true });
+const socket = io();
 
 socket.on("mensajes", msg => {
   console.log("mensajes =>", msg);
